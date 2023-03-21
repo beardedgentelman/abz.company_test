@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('./root_colors.scss');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1.625;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  background: var(--background-color);
+}
+input,
+select,
+option,
+label,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+.wrapper {
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main {
+  flex: 1 1 auto;
+}
+
+[class*='__container'] {
+  width: min(100% - 15px, 1170px);
+  margin-inline: auto;
+
+  @media only screen and (max-width: 1024px) {
+    width: min(100% - 60px, 904px);
+  }
+  @media only screen and (max-width: 768px) {
+    width: min(100% - 32px, 704px);
+  }
+  @media only screen and (max-width: 360px) {
+    width: min(100% - 16px, 344px);
+  }
+}

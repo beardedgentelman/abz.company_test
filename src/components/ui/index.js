@@ -1,0 +1,6 @@
+export { default as Button } from './Button/Button'
+export { default as CardUser } from './CardUser/CardUser'
+export { default as InputFile } from './InputFile/InputFile'
+export { default as InputRadio } from './InputRadio/InputRadio'
+export { default as InputText } from './InputText/InputText'
+export { default as Preloader } from './Preloader/Preloader'

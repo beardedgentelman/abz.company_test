@@ -1,0 +1,21 @@
+._header {
+  width: 100%;
+  background: #fff;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+._container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+._logo {
+  width: 100px;
+}
+
+._btn_container {
+  display: flex;
+  gap: 10px;
+}
