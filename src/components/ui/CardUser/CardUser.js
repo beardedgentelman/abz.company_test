@@ -34,6 +34,7 @@ const CardUser = props => {
     <div className={style._wrapper}>
       <div className={style._photo_wrapper}>
         <img
+          loading='lazy'
           className={style._photo}
           src={props.cardPhoto ? props.cardPhoto : emptyImg}
           alt={props.name}
